@@ -39,11 +39,11 @@ function updateLink(){
 }
 
 function addTag(text){
-	$('#multi-tag-search-tags').append(`<li class="multi-tag-search-tags-item"><span class="multi-tag-search-tags-text">${text}</span><span class="multi-tag-search-tags-delete" onclick="deleteTag(this)">x</span></li>`);
+	$('#multi-tag-search-tags').append(`<li class="multi-tag-search-tags-item" onclick="deleteTag(this)"><span class="multi-tag-search-tags-text">${text}</span><span class="multi-tag-search-tags-delete">×</span></li>`);
 	updateLink();
 }
 
 function deleteTag(dom){
-	$(dom).parent().remove();
+	$(dom).remove();
 	updateLink();
 }

@@ -36,19 +36,26 @@
   float: left;
   list-style: none;
   padding-left: 12px;
-  padding-right: 24px;
+  padding-right: 12px;
   margin-right: 4px;
+
+  color: white;
+  cursor: pointer;
 }
 
 .multi-tag-search-tags-text {
   color: #32475e;
   font-size: 13px;
   font-weight: 600;
+  color: #32475e;
 }
 
 .multi-tag-search-tags-delete {
   position: absolute;
-  right: 8px;
-  bottom: 0.1px;
-  cursor: pointer;
+  left: 2px;
+  top: 0.1px;
+}
+
+.multi-tag-search-tags-item:hover {
+  color: #32475e;
 }
