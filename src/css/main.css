@@ -23,6 +23,11 @@
   padding-right: 10px;
 }
 
+#multi-tag-search-link a img {
+  width: 24px;
+  height: 24px;
+}
+
 .multi-tag-search-tags-item {
   display: inline-block;
   width: auto;

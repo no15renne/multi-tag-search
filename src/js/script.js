@@ -4,7 +4,7 @@ setTimeout(function(){
 <div id="multi-tag-search">
 	<ul id="multi-tag-search-tags"></ul>
 	<span id="multi-tag-search-link">
-		<a href="/tag/hoge" target="_brank"><img src="" width="24px" height="24px" alt="複合タグ検索"></a>
+		<a href="/tag/hoge" target="_brank"><img src="" alt="複合タグ検索"></a>
 	</span>
 </div>
 `);
