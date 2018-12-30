@@ -1,16 +1,16 @@
 {
 	"manifest_version": 2,
 	"name": "nico_multitag_search",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "description",
 	"content_scripts": [
 		{
 			"matches": ["https://www.nicovideo.jp/watch/*"],
-			"css": ["main.css"],
-			"js": ["jquery.js", "script.js"]
+			"css": ["./src/css/main.css"],
+			"js": ["./src/js/jquery.js", "./src/js/script.js"]
 		}
 	],
 	"web_accessible_resources": [
-    "search.png"
+    "src/img/search.png"
   ]
 }

@@ -12,7 +12,7 @@ setTimeout(function(){
 	$("#multi-tag-search").on('dragover', onDragOver);
 	$("#multi-tag-search").on('drop', onDrop);
 
-	const searchImageURL = chrome.extension.getURL('search.png');
+	const searchImageURL = chrome.extension.getURL('./src/img/search.png');
 	$('#multi-tag-search-link > a > img').attr('src', searchImageURL);
 	updateLink();
 }, 1000);
