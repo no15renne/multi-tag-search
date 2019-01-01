@@ -6,11 +6,11 @@
 	"content_scripts": [
 		{
 			"matches": ["https://www.nicovideo.jp/watch/*"],
-			"css": ["./src/css/main.css"],
-			"js": ["./src/js/jquery.js", "./src/js/script.js"]
+			"css": ["./static/css/main.css"],
+			"js": ["./static/js/jquery.js", "./static/js/script.js"]
 		}
 	],
 	"web_accessible_resources": [
-    "src/img/search.png"
+    "static/img/search.png"
   ]
 }
