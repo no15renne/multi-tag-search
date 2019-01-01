@@ -1,0 +1,19 @@
+{
+  "name": "nico_multitag_search",
+  "version": "0.1.0",
+  "description": "[ニコニコ動画](https://www.nicovideo.jp/video_top)の視聴ページで、複数タグ検索を可能にするChrome Extensionです。",
+  "main": "src/js/index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "no15_renne",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "vue": "^2.5.21"
+  }
+}
