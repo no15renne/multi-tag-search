@@ -7,7 +7,7 @@
 		{
 			"matches": ["https://www.nicovideo.jp/watch/*"],
 			"css": ["./static/css/main.css"],
-			"js": ["./static/js/jquery.js", "./dist/js/index.js"]
+			"js": ["./dist/js/index.js"]
 		}
 	],
 	"web_accessible_resources": [
