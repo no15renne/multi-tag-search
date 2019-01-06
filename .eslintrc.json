@@ -1,0 +1,14 @@
+{
+	"extends": ["eslint:recommended"],
+	"plugins": ["flowtype"],
+	"parser": "babel-eslint",
+  "env": {
+		"browser": true,
+		"es6": true
+	},
+	"parserOptions": {
+		"sourceType": "module"
+	},
+  "globals": {},
+  "rules": {}
+}

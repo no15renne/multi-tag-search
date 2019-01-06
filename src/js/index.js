@@ -1,5 +1,6 @@
-import Vue from 'vue'
+import Vue from 'vue';
 
+// eslint-disable-next-line no-unused-vars
 import multiTagSearch from './components/multiTagSearch.js'
 
 setTimeout(() => {

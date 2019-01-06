@@ -10,6 +10,18 @@ module.exports = {
   optimization: {
     minimize: true
   },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        query: {
+          plugins: ['transform-flow-strip-types']
+        }
+      }
+    ]
+  },
   resolve: {
     alias: {
       vue: 'vue/dist/vue.js'

@@ -3,7 +3,7 @@ import Vue from 'vue'
 import multiTag from './multiTag.js'
 
 const getSearchImgURL = () => {
-  const searchImg = document.getElementById('multi-tag-search-link');
+  // eslint-disable-next-line no-undef
   return chrome.extension.getURL('./static/img/search.png');
 }
 
@@ -25,18 +25,18 @@ const multiTagSearch = Vue.component('multi-tag-search', {
       return '/tag/' + this.tags.join(' ');
     },
     onDragOver: function(e) {
-    	e.preventDefault();
+      e.preventDefault();
     },
     onDrop: function(e) {
       e.preventDefault();
-    	const data = e.dataTransfer.getData('text');
-    	const rawTag = data.match(/https:\/\/www.nicovideo.jp\/tag\/(.*)\??(.*)$/);
-    	if(rawTag && rawTag.length >= 2) {
+      const data = e.dataTransfer.getData('text');
+      const rawTag = data.match(/https:\/\/www.nicovideo.jp\/tag\/(.*)\??(.*)$/);
+      if(rawTag && rawTag.length >= 2) {
         const tag = decodeURI(rawTag[1]);
         if(!this.tags.includes(tag)){
           this.tags.push(tag);
         }
-    	}
+      }
     }
   },
   template: `
